@@ -3,6 +3,8 @@ plugins {
     alias(libs.plugins.jetbrains.kotlin.android)
     id("kotlin-kapt")
     id("com.google.dagger.hilt.android")
+    id("com.google.gms.google-services")
+
 }
 
 android {
@@ -59,7 +61,6 @@ dependencies {
     implementation (libs.stickyswitch)
     implementation (libs.glide)
 
-
     implementation(libs.androidx.room.runtime)
     annotationProcessor(libs.androidx.room.room.compiler)
     kapt(libs.androidx.room.room.compiler)
@@ -69,6 +70,17 @@ dependencies {
     implementation(libs.androidx.room.guava)
     testImplementation(libs.androidx.room.testing)
     implementation(libs.androidx.room.paging)
+    implementation(platform(libs.firebase.bom))
+    implementation (libs.google.firebase.analytics)
+    implementation (libs.firebase.messaging)
+
+    implementation (libs.geofire.android)
+    implementation (libs.geofire.android.common)
+
+    implementation(libs.firebase.auth)
+    implementation(libs.firebase.firestore)
+    implementation(libs.firebase.storage)
+
 }
 kapt {
     correctErrorTypes = true

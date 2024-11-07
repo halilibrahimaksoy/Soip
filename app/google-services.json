@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "474820843734",
+    "project_id": "soip-7f379",
+    "storage_bucket": "soip-7f379.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:474820843734:android:b100e6761e329c5e7e9177",
+        "android_client_info": {
+          "package_name": "com.haksoy.soip"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvHaVMCIL978cAvVre9vQdqgHQTMxbdL0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
