@@ -1,12 +1,13 @@
 package com.haksoy.soip.cameralibrary.state;
 
 import android.graphics.Bitmap;
+import android.util.Log;
 import android.view.Surface;
 import android.view.SurfaceHolder;
 
 import com.haksoy.soip.cameralibrary.CameraInterface;
 import com.haksoy.soip.cameralibrary.JCameraView;
-import com.haksoy.soip.cameralibrary.util.LogUtil;
+
 
 /**
  * =====================================
@@ -38,7 +39,7 @@ class PreviewState implements State {
 
     @Override
     public void foucs(float x, float y, CameraInterface.FocusCallback callback) {
-        Log.i("preview state foucs");
+        Log.i(TAG, "preview state foucs");
         if (machine.getView().handlerFoucs(x, y)) {
             CameraInterface.getInstance().handleFocus(machine.getContext(), x, y, callback);
         }
@@ -61,7 +62,7 @@ class PreviewState implements State {
             public void captureResult(Bitmap bitmap, boolean isVertical) {
                 machine.getView().showPicture(bitmap, isVertical);
                 machine.setState(machine.getBorrowPictureState());
-                Log.i("capture");
+                Log.i(TAG, "capture");
             }
         });
     }
@@ -88,12 +89,12 @@ class PreviewState implements State {
 
     @Override
     public void cancle(SurfaceHolder holder, float screenProp) {
-        Log.i("浏览状态下,没有 cancle 事件");
+        Log.i(TAG, "浏览状态下,没有 cancle 事件");
     }
 
     @Override
     public void confirm() {
-        Log.i("浏览状态下,没有 confirm 事件");
+        Log.i(TAG, "浏览状态下,没有 confirm 事件");
     }
 
     @Override

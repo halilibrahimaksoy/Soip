@@ -39,6 +39,7 @@ android {
     }
     buildFeatures {
         viewBinding = true
+        buildConfig = true
     }
 }
 
@@ -80,7 +81,20 @@ dependencies {
     implementation(libs.firebase.auth)
     implementation(libs.firebase.firestore)
     implementation(libs.firebase.storage)
+    implementation(libs.play.services.location)
+    implementation(libs.logging.interceptor)
+    implementation(libs.converter.gson)
+    implementation(libs.imagepicker)
+    implementation(libs.systemuihelper)
+    implementation(libs.inline.activity.result)
+    implementation(libs.androidx.preference)
+//    implementation(libs.play.services)
+    implementation(libs.play.services.maps)
 
+
+    implementation(libs.androidx.media3.exoplayer)
+    implementation(libs.androidx.media3.exoplayer.dash)
+    implementation(libs.androidx.media3.ui)
 }
 kapt {
     correctErrorTypes = true

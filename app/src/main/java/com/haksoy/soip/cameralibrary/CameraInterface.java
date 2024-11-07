@@ -29,7 +29,7 @@ import com.haksoy.soip.cameralibrary.util.CameraParamUtil;
 import com.haksoy.soip.cameralibrary.util.CheckPermission;
 import com.haksoy.soip.cameralibrary.util.DeviceUtil;
 import com.haksoy.soip.cameralibrary.util.FileUtil;
-import com.haksoy.soip.cameralibrary.util.LogUtil;
+
 import com.haksoy.soip.cameralibrary.util.ScreenUtils;
 
 import java.io.ByteArrayOutputStream;
@@ -50,7 +50,7 @@ import static android.graphics.Bitmap.createBitmap;
 @SuppressWarnings("deprecation")
 public class CameraInterface implements Camera.PreviewCallback {
 
-    private static final String TAG = "CJT";
+    private static final String TAG = "CameraInterface";
 
     private volatile static CameraInterface mCameraInterface;
 
@@ -250,7 +250,7 @@ public class CameraInterface implements Camera.PreviewCallback {
                     mParams.setZoom(nowScaleRate);
                     mCamera.setParameters(mParams);
                 }
-                Log.i("setZoom = " + nowScaleRate);
+                Log.i(TAG, "setZoom = " + nowScaleRate);
                 break;
         }
 
@@ -335,7 +335,7 @@ public class CameraInterface implements Camera.PreviewCallback {
             SELECTED_CAMERA = CAMERA_POST_POSITION;
         }
         doDestroyCamera();
-        Log.i("open start");
+        Log.i(TAG, "open start");
         openCamera(SELECTED_CAMERA);
 //        mCamera = Camera.open();
         if (Build.VERSION.SDK_INT > 17 && this.mCamera != null) {
@@ -345,7 +345,7 @@ public class CameraInterface implements Camera.PreviewCallback {
                 e.printStackTrace();
             }
         }
-        Log.i("open end");
+        Log.i(TAG, "open end");
         doStartPreview(holder, screenProp);
     }
 
@@ -354,7 +354,7 @@ public class CameraInterface implements Camera.PreviewCallback {
      */
     public void doStartPreview(SurfaceHolder holder, float screenProp) {
         if (isPreviewing) {
-            Log.i("doStartPreview isPreviewing");
+            Log.i(TAG, "doStartPreview isPreviewing");
         }
         if (this.screenProp < 0) {
             this.screenProp = screenProp;

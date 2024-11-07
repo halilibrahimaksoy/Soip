@@ -9,12 +9,13 @@ import android.graphics.Canvas;
 import android.graphics.Paint;
 import android.graphics.RectF;
 import android.os.CountDownTimer;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 
 import com.haksoy.soip.cameralibrary.listener.CaptureListener;
 import com.haksoy.soip.cameralibrary.util.CheckPermission;
-import com.haksoy.soip.cameralibrary.util.LogUtil;
+
 
 import static com.haksoy.soip.cameralibrary.JCameraView.BUTTON_STATE_BOTH;
 import static com.haksoy.soip.cameralibrary.JCameraView.BUTTON_STATE_ONLY_CAPTURE;
@@ -30,6 +31,7 @@ import static com.haksoy.soip.cameralibrary.JCameraView.BUTTON_STATE_ONLY_RECORD
  * =====================================
  */
 public class CaptureButton extends View {
+    private static final String TAG = "CaptureButton";
 
     private int state;              //当前按钮状态
     private int button_state;       //按钮可执行的功能状态（拍照,录制,两者）
@@ -98,9 +100,9 @@ public class CaptureButton extends View {
 
         state = STATE_IDLE;                //初始化为空闲状态
         button_state = BUTTON_STATE_BOTH;  //初始化按钮为可录制可拍照
-        Log.i("CaptureButtom start");
+        Log.i(TAG, "CaptureButtom start");
         duration = 10 * 1000;              //默认最长录制时间为10s
-        Log.i("CaptureButtom end");
+        Log.i(TAG, "CaptureButtom end");
         min_duration = 1500;              //默认最短录制时间为1.5s
 
         center_X = (button_size + outside_add_size * 2) / 2;
@@ -146,7 +148,7 @@ public class CaptureButton extends View {
     public boolean onTouchEvent(MotionEvent event) {
         switch (event.getAction()) {
             case MotionEvent.ACTION_DOWN:
-                Log.i("state = " + state);
+                Log.i(TAG, "state = " + state);
                 if (event.getPointerCount() > 1 || state != STATE_IDLE)
                     break;
                 event_Y = event.getY();     //记录Y值

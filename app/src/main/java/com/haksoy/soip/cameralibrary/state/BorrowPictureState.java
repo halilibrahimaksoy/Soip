@@ -1,11 +1,12 @@
 package com.haksoy.soip.cameralibrary.state;
 
+import android.util.Log;
 import android.view.Surface;
 import android.view.SurfaceHolder;
 
 import com.haksoy.soip.cameralibrary.CameraInterface;
 import com.haksoy.soip.cameralibrary.JCameraView;
-import com.haksoy.soip.cameralibrary.util.LogUtil;
+
 
 /**
  * =====================================

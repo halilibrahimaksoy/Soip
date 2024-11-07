@@ -6,7 +6,7 @@ import android.view.SurfaceHolder;
 
 import com.haksoy.soip.cameralibrary.CameraInterface;
 import com.haksoy.soip.cameralibrary.JCameraView;
-import com.haksoy.soip.cameralibrary.util.LogUtil;
+
 
 /**
  * =====================================
