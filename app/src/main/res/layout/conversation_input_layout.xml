@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:anim="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lnrSend"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/main_tab_background"
+    android:paddingLeft="10dp"
+    android:paddingTop="5dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="5dp"
+    anim:layout_constraintBottom_toBottomOf="parent"
+    tools:showIn="@layout/fragment_conversation_detail">
+
+    <ImageView
+        android:id="@+id/btn_start_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:src="@drawable/ic_camera"
+        anim:layout_constraintBottom_toBottomOf="parent"
+        anim:layout_constraintStart_toStartOf="parent"
+        anim:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        style="@style/BaseEditTextStyle"
+        android:id="@+id/txtMessage"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/text_input_bg"
+        android:hint="@string/type_a_new_message"
+        android:inputType="textMultiLine"
+        android:maxLines="10"
+        android:padding="5dp"
+        android:maxLength="400"
+        android:textCursorDrawable="@null"
+        anim:layout_constraintBottom_toBottomOf="parent"
+        anim:layout_constraintEnd_toStartOf="@id/btnSend"
+        anim:layout_constraintStart_toEndOf="@id/btn_start_camera"
+        anim:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/btnSend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:src="@drawable/ic_send"
+        anim:layout_constraintBottom_toBottomOf="parent"
+        anim:layout_constraintEnd_toEndOf="parent"
+        anim:layout_constraintStart_toEndOf="@id/txtMessage"
+        anim:layout_constraintTop_toTopOf="parent"
+        anim:tint="@color/icon_second" />
+</androidx.constraintlayout.widget.ConstraintLayout>

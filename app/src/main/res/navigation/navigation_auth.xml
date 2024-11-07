@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_auth"
+    app:startDestination="@id/enterPhoneNumberFragment">
+
+    <fragment
+        android:id="@+id/enterPhoneNumberFragment"
+        android:name="com.haksoy.soip.ui.auth.enterPhoneNumber.EnterPhoneNumberFragment"
+        android:label="fragment_enter_phone_number"
+        tools:layout="@layout/fragment_enter_phone_number">
+        <action
+            android:id="@+id/action_enterPhoneNumberFragment_to_otpValidationFragment"
+            app:destination="@id/otpValidationFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/otpValidationFragment"
+        android:name="com.haksoy.soip.ui.auth.otpValidation.OtpValidationFragment"
+        android:label="fragment_otp_validation"
+        tools:layout="@layout/fragment_otp_validation">
+        <action
+            android:id="@+id/action_otpValidationFragment_to_mainActivity"
+            app:destination="@id/mainActivity"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/userProfileFragment"
+        android:name="com.haksoy.soip.ui.profile.UserProfileFragment"
+        android:label="fragment_user_profile"
+        tools:layout="@layout/fragment_user_profile">
+        <action
+            android:id="@+id/action_userProfileFragment_to_mainActivity"
+            app:destination="@id/mainActivity" />
+    </fragment>
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.haksoy.soip.ui.main.MainActivity"
+        android:label="activity_main"
+        tools:layout="@layout/activity_main" />
+</navigation>

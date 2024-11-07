@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/general_border_color" />
+            <corners android:radius="@dimen/border_radius" />
+        </shape>
+    </item>
+
+    <item
+        android:bottom="@dimen/message_item_border_size"
+        android:left="@dimen/message_item_border_size"
+        android:right="@dimen/message_item_border_size"
+        android:top="@dimen/message_item_border_size">
+        <shape android:shape="rectangle">
+            <solid android:color="@android:color/transparent" />
+            <corners android:radius="@dimen/border_radius" />
+        </shape>
+    </item>
+</layer-list>

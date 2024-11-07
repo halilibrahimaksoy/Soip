@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+    <color name="actionModeBackground">#72b6e7</color>
+    <color name="color_text1">#222</color>
+    <color name="color_text2">#444</color>
+    <color name="color_text3">#023e8a</color>
+
+    <color name="unread_message_count">#06d755</color>
+    <color name="border_shadow">#CABBBBBB</color>
+    <color name="profile_imege_border_color">#72b6e7</color>
+    <color name="general_border_color">#CABBBBBB</color>
+    <color name="colorPrimary">#FFF</color>
+    <color name="colorPrimaryDark">#80c1c1c1</color>
+    <color name="colorAccent">#FFF</color>
+    <color name="icon_first">#72b6e7</color>
+    <color name="icon_second">#555</color>
+
+    <color name="icon_selected">#333</color>
+    <color name="icon_disabled">#42000000</color>
+
+    <color name="conversation_detail_background">@color/lightGray</color>
+    <color name="conversation_detail_item_right_background">#dcf8c6</color>
+    <color name="conversation_detail_item_right_message">#555b50</color>
+    <color name="conversation_detail_item_right_date">@color/color_text2</color>
+    <color name="conversation_detail_item_left_background">#ffffff</color>
+    <color name="conversation_detail_item_left_message">#303030</color>
+    <color name="conversation_detail_item_left_date">@color/color_text2</color>
+    <color name="delete_menu_background">#80FFFFFF</color>
+    <color name="lightGray">#F2F2F2</color>
+
+    <color name="disabledBtnBg">#999999</color>
+    <color name="my_location">#4f4f4f</color>
+    <color name="my_location_background">#dddddd</color>
+    <color name="power">#ccc</color>
+    <color name="power_background">#ddd</color>
+
+
+    <color name="chat_item_background">@color/colorAccent</color>
+    <color name="chat_item_background_unread">#c1c1c1</color>
+    <color name="chat_item_name">#262626</color>
+    <color name="chat_item_message">#8E8E8E</color>
+    <color name="chat_item_message_unread">#262626</color>
+    <color name="chat_item_unread_indicator">#0095F6</color>
+</resources>

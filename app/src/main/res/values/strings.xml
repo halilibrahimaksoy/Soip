@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">SoIP</string>
+    <string name="title_activity_login">@string/app_name</string>
+    <string name="settings">Settings</string>
+    <string name="ok">OK</string>
+    <string name="required">Required.</string>
+    <string name="should_be_min_6">Should be min 6 character.</string>
+    <string name="should_be_same">"Should be same."</string>
+    <string name="deosnt_match">"Passwords doesn't match"</string>
+    <string name="forget_password_message">Password Reset Link Sent To Address : %1$s</string>
+    <string name="fine_location_permission_rationale">The fine location permission is needed for core functionality.</string>
+    <string name="fine_location_permission_dialog">The fine location permission is needed for core functionality.</string>
+    <string name="fine_permission_denied_explanation">Fine location permission was denied, but is needed for core functionality.</string>
+
+    <string name="background_location_permission_rationale">The background location permission is needed for enhanced functionality.</string>
+    <string name="background_location_permission_dialog">The fine location permission is needed for core functionality.</string>
+    <string name="background_permission_denied_explanation">Background location permission was denied but needed for enhanced functionality.</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="enable_back_location_header">Visibility When Background</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Preference Keys -->
+    <string name="enable_background_location_key">enable_background_location_key</string>
+
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+
+    <string name="enable_back_location_title">Active in the background</string>
+    <string name="enable_back_location_summary_on">Other users can see you while the application is in the background</string>
+    <string name="enable_back_location_summary_off">Other users cannot see you while the application is in the background</string>
+
+    <string name="logout">Logout</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="forget_password">Forget Password</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="delete_for_me">Delete For Me</string>
+    <string name="delete_for_everyone">Delete For Everyone</string>
+    <string name="delete">Delete</string>
+
+    <string name="camera_tip">Tap to Take a Photo,Hold to Record Video</string>
+    <string name="audio_permission_error">Audio Permissions are Missing</string>
+
+    <string name="image">Image</string>
+    <string name="video">Video</string>
+    <string name="search">Search</string>
+
+    <string name="chats">Chats</string>
+    <string name="enter_phone_message">Please enter your Country Code \n and Phone number for verification</string>
+    <string name="your_phone_number">Your Phone Number</string>
+    <string name="generate_otp">Generate OTP</string>
+    <string name="verify_your_number">Verify Your Number</string>
+    <string name="enter_otp">Enter OTP</string>
+    <string name="we_have_sent_you_an_otp">We have sent you an OTP \n for phone number verification</string>
+    <string name="verify_otp">Verify OTP</string>
+    <string name="abouth_me">Abouth me ..</string>
+    <string name="type_a_new_message">Type a new message....</string>
+
+    //Error Messages
+
+    <string name="invalid_phone_number">Invalid Phone Number</string>
+    <string name="no_chat_message">You don\'t have any messages yet. \n You can start messaging by discovering your area.</string>
+    <string name="no_connection_message">The network connection was lost \n Please check your network connection.</string>
+</resources>
