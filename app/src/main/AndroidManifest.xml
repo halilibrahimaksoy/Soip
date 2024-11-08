@@ -56,10 +56,6 @@
             android:name=".ui.CameraActivity"
             android:screenOrientation="portrait" />
 
-        <receiver
-            android:name=".location.LocationUpdatesBroadcastReceiver"
-            android:exported="false" />
-
         <service
             android:name=".messaging.MyFirebaseMessagingService"
             android:exported="true">
@@ -67,6 +63,14 @@
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyD3OtjFM-TQWheiVi6Ec3qVkeUFLnSmC14" />
+
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:authorities="${applicationId}.androidx-startup"
+            tools:node="remove"></provider>
     </application>
 
 </manifest>

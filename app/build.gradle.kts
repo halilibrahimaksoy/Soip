@@ -88,13 +88,17 @@ dependencies {
     implementation(libs.systemuihelper)
     implementation(libs.inline.activity.result)
     implementation(libs.androidx.preference)
-//    implementation(libs.play.services)
     implementation(libs.play.services.maps)
 
 
     implementation(libs.androidx.media3.exoplayer)
     implementation(libs.androidx.media3.exoplayer.dash)
     implementation(libs.androidx.media3.ui)
+    implementation(libs.androidx.work.runtime.ktx)
+
+    implementation(libs.androidx.hilt.work)
+    kapt(libs.androidx.hilt.compiler)
+
 }
 kapt {
     correctErrorTypes = true
