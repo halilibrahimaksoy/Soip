@@ -20,7 +20,7 @@ import com.haksoy.soip.utlis.Resource
 import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 
-private const val TAG = "SoIP:AuthenticationViewModel"
+private const val TAG = "AuthenticationViewModel"
 
 
 @HiltViewModel

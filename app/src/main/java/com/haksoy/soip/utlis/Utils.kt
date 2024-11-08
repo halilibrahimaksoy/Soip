@@ -24,13 +24,13 @@ import androidx.lifecycle.Observer
 import androidx.preference.PreferenceManager
 import com.google.android.material.snackbar.Snackbar
 import com.haksoy.soip.R
-import java.util.*
+import java.util.Locale
 
 
 /**
  * Helper functions to simplify permission checks/requests.
  */
-private const val TAG = "SoIP:Utils"
+private const val TAG = "Utils"
 
 class Utils {
     companion object {

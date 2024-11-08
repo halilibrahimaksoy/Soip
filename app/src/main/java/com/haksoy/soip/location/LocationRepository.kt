@@ -3,13 +3,10 @@ package com.haksoy.soip.location
 import android.location.Location
 import android.util.Log
 import androidx.annotation.MainThread
-import com.haksoy.soip.MainApplication
 import com.haksoy.soip.data.FirebaseDao
-import java.util.concurrent.ExecutorService
-import java.util.concurrent.Executors
 import javax.inject.Inject
 
-private const val TAG = "SoIP:LocationRepository"
+private const val TAG = "LocationRepository"
 
 /**
  * Access point for database (MyLocation data) and location APIs (start/stop location updates and

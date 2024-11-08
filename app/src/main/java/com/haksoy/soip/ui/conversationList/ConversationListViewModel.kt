@@ -10,7 +10,7 @@ import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
-private const val TAG = "SoIP:ConversationListViewModel"
+private const val TAG = "ConversationListViewModel"
 
 @HiltViewModel
 class ConversationListViewModel @Inject constructor(

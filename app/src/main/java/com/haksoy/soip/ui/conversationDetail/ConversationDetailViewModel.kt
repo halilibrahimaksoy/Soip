@@ -22,7 +22,7 @@ import java.util.Date
 import java.util.UUID
 import javax.inject.Inject
 
-private const val TAG = "SoIP:ConversationDetailViewModel"
+private const val TAG = "ConversationDetailViewModel"
 
 @HiltViewModel
 class ConversationDetailViewModel @Inject constructor(

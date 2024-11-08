@@ -17,7 +17,7 @@ import com.haksoy.soip.ui.main.SharedViewModel
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
-private const val TAG = "SoIP:UserListFragment"
+private const val TAG = "UserListFragment"
 
 @AndroidEntryPoint
 class UserListFragment @Inject constructor() : Fragment(), UserListAdapter.UserItemListener {

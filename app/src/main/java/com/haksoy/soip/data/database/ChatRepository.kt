@@ -7,7 +7,7 @@ import com.haksoy.soip.data.chat.Conversation
 import com.haksoy.soip.data.chat.Status
 import javax.inject.Inject
 
-private const val TAG = "SoIP:ChatRepository"
+private const val TAG = "ChatRepository"
 
 class ChatRepository @Inject constructor(
     appDatabase: AppDatabase

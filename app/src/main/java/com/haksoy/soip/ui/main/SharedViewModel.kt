@@ -7,7 +7,7 @@ import com.haksoy.soip.viewmodel.BaseViewModel
 import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 
-private const val TAG = "SoIP:SharedViewModel"
+private const val TAG = "SharedViewModel"
 
 @HiltViewModel
 class SharedViewModel @Inject constructor(application: Application) : BaseViewModel(application) {

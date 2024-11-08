@@ -9,7 +9,7 @@ import android.widget.ProgressBar
 import androidx.appcompat.app.AlertDialog
 import javax.inject.Inject
 
-private const val TAG = "SoIP:ProgressHelper"
+private const val TAG = "ProgressHelper"
 
 class ProgressHelper @Inject constructor() {
 

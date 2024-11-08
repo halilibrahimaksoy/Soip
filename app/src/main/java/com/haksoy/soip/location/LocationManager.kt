@@ -14,7 +14,7 @@ import dagger.hilt.android.qualifiers.ApplicationContext
 import java.util.concurrent.TimeUnit
 import javax.inject.Inject
 
-private const val TAG = "SoIP:LocationManager"
+private const val TAG = "LocationManager"
 
 /**
  * Manages all location related tasks for the app.

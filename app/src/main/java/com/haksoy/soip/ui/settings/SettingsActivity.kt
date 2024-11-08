@@ -16,16 +16,16 @@ import androidx.preference.SwitchPreferenceCompat
 import com.google.android.material.snackbar.Snackbar
 import com.haksoy.soip.BuildConfig
 import com.haksoy.soip.R
-import com.haksoy.soip.data.FirebaseDao
-import com.haksoy.soip.data.database.AppDatabase
-import com.haksoy.soip.data.database.ChatRepository
 import com.haksoy.soip.databinding.SettingsActivityBinding
 import com.haksoy.soip.ui.splash.SplashActivity
-import com.haksoy.soip.utlis.*
+import com.haksoy.soip.utlis.Constants
+import com.haksoy.soip.utlis.hasPermission
+import com.haksoy.soip.utlis.putPreferencesBoolean
+import com.haksoy.soip.utlis.requestPermissionWithRationale
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
-private const val TAG = "SoIP:SettingsActivity"
+private const val TAG = "SettingsActivity"
 
 @AndroidEntryPoint
 class SettingsActivity : AppCompatActivity() {

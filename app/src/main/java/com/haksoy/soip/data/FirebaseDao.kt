@@ -30,7 +30,7 @@ import com.haksoy.soip.utlis.observeOnce
 import java.io.File
 import java.util.concurrent.TimeUnit
 
-private const val TAG = "SoIP:FirebaseDao"
+private const val TAG = "FirebaseDao"
 
 class FirebaseDao {
 

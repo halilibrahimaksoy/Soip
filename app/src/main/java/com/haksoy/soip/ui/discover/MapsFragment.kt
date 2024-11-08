@@ -5,7 +5,11 @@ import android.app.AlertDialog
 import android.content.Context
 import android.content.Intent
 import android.content.pm.PackageManager
-import android.graphics.*
+import android.graphics.Bitmap
+import android.graphics.Canvas
+import android.graphics.Paint
+import android.graphics.PorterDuff
+import android.graphics.PorterDuffXfermode
 import android.graphics.drawable.Drawable
 import android.net.Uri
 import android.os.Bundle
@@ -34,11 +38,18 @@ import com.google.android.gms.maps.model.MarkerOptions
 import com.google.android.material.snackbar.Snackbar
 import com.haksoy.soip.BuildConfig
 import com.haksoy.soip.R
-import com.haksoy.soip.data.FirebaseDao
 import com.haksoy.soip.data.user.User
 import com.haksoy.soip.databinding.FragmentMapsBinding
 import com.haksoy.soip.ui.main.SharedViewModel
-import com.haksoy.soip.utlis.*
+import com.haksoy.soip.utlis.Constants
+import com.haksoy.soip.utlis.PermissionsUtil
+import com.haksoy.soip.utlis.Utils
+import com.haksoy.soip.utlis.getPreferencesBoolean
+import com.haksoy.soip.utlis.hasPermission
+import com.haksoy.soip.utlis.putPreferencesBoolean
+import com.haksoy.soip.utlis.requestPermissionWithRationale
+import com.haksoy.soip.utlis.requestPermissionsWithRationale
+import com.haksoy.soip.utlis.showMessage
 import dagger.hilt.android.AndroidEntryPoint
 import io.ghyeok.stickyswitch.widget.StickySwitch
 import org.jetbrains.annotations.NotNull
@@ -46,7 +57,7 @@ import javax.inject.Inject
 import kotlin.math.min
 
 
-private const val TAG = "SoIP:MapsFragment"
+private const val TAG = "MapsFragment"
 
 @AndroidEntryPoint
 class MapsFragment @Inject constructor() : Fragment() {

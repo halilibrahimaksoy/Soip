@@ -21,7 +21,7 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-private const val TAG = "SoIP:MessageRepository"
+private const val TAG = "MessageRepository"
 
 class MessageRepository(val userRepository: UserRepository) {
 
