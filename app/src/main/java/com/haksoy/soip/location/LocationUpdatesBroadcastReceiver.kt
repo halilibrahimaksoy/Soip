@@ -1,11 +1,9 @@
 package com.haksoy.soip.location
 
-import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
 import android.util.Log
 import com.google.android.gms.location.LocationResult
-import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
 private const val TAG = "SoIP:LUBroadcastReceiver"
@@ -24,7 +22,6 @@ private const val TAG = "SoIP:LUBroadcastReceiver"
  *  foreground.
  */
 
-@AndroidEntryPoint
 class LocationUpdatesBroadcastReceiver : LocationBroadcast() {
 
     @Inject
