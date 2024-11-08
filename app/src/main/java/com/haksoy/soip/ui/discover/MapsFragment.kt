@@ -201,7 +201,6 @@ class MapsFragment @Inject constructor() : Fragment() {
                     })
             }
         }
-//                 ProgressHelper.getInstance().hideLoading()
         Log.i(TAG, "updateMap  :  nearlyUsers added to maps")
     }
 

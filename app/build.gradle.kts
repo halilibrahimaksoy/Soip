@@ -99,6 +99,8 @@ dependencies {
     implementation(libs.androidx.hilt.work)
     kapt(libs.androidx.hilt.compiler)
 
+    implementation(libs.play.services.gcm)
+
 }
 kapt {
     correctErrorTypes = true

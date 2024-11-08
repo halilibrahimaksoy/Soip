@@ -16,7 +16,11 @@ import javax.inject.Inject
 private const val TAG = "MapsViewModel"
 
 @HiltViewModel
-class MapsViewModel @Inject constructor(app: Application, val firebaseDao: FirebaseDao, private val locationRepository: LocationRepository) : BaseViewModel(app) {
+class MapsViewModel @Inject constructor(
+    app: Application,
+    val firebaseDao: FirebaseDao,
+    private val locationRepository: LocationRepository
+) : BaseViewModel(app) {
 
 
     val nearlyUsers = MutableLiveData<List<User>>()
